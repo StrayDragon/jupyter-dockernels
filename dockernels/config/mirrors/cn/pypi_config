@@ -1,0 +1,5 @@
+# copy to /etc/pip.conf
+[global]
+index-url=https://pypi.tuna.tsinghua.edu.cn/simple
+#extra-index-url=https://pypi.org/simple/
+disable-pip-version-check=1
