@@ -1,0 +1,18 @@
+[tool.pdm]
+
+[project]
+name = "jupyter-dockernels"
+version = ""
+description = ""
+authors = [
+    {name = "L8ng", email = "straydragonl@foxmail.com"},
+]
+dependencies = [
+    "jupyterlab>=3.6.1",
+    "jupyterlab-lsp>=4.0.0",
+    "black>=23.1.0",
+    "python-lsp-server[rope]>=1.7.1",
+    "dockernel @ git+https://github.com/StrayDragon/dockernel@master",
+]
+requires-python = ">=3.9"
+license = {text = "MIT"}
