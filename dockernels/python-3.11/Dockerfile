@@ -1,5 +1,6 @@
 FROM python:3.11.2-slim-bullseye
 
+COPY config/mirrors/cn/debian_bullseye_config /etc/apt/sources.list
 COPY config/mirrors/cn/pypi_config /etc/pip.conf
 
 RUN pip install --upgrade pip ipython ipykernel
