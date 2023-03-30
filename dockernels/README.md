@@ -27,3 +27,6 @@ dockernel install python-3.11-dockernel --name py3.11-DK --language python
 docker build --tag go-1.20-dockernel -f go-1.20/Dockerfile .
 dockernel install go-1.20-dockernel --name go1.20-DK --language go
 ```
+
+# 其他 Jupyter Kernels :)
+- https://gist.github.com/chronitis/682c4e0d9f663e85e3d87e97cd7d1624

@@ -6,6 +6,8 @@ COPY config/mirrors/cn/debian_bullseye_config /etc/apt/sources.list
 RUN rm -Rf /var/lib/apt/lists/* && \
   apt-get update  && \
   apt-get install -y \
+  pkg-config \
+  libssl-dev \
   apt-transport-https \
   ca-certificates \
   build-essential \
