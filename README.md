@@ -28,9 +28,7 @@
 ### 仅 dockernels
 - 你可以仅使用该项目提供的 [dockernels/](./dockernels/)
 ```
-pipx install git+https://github.com/StrayDragon/dockernel@master # for MacOS user
-# 或
-pipx install dockernel # for other
+pipx install git+https://github.com/StrayDragon/dockernel@master
 ```
 - 然后按照 [dockernels/](./dockernels/) 提供的安装命令安装
 
@@ -39,7 +37,7 @@ pipx install dockernel # for other
 - 运行以下命令
 
 ```shell
-pdm install
+pdm install --no-self
 
 <see ./dockernels README and run cmds>
 
