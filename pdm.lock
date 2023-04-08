@@ -195,7 +195,7 @@ version = "1.0.2"
 requires_python = ">=3.6"
 git = "https://github.com/StrayDragon/dockernel"
 ref = "master"
-revision = "6fb7845fe6dba34f8b12cbd7c251c4116ea60691"
+revision = "6564c8c91aa95663c3d8e593503ea6ffe5a3c5a6"
 summary = "Utility for creating dockerized Jupyter kernels"
 dependencies = [
     "docker",
