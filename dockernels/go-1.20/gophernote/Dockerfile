@@ -7,3 +7,4 @@ RUN go env -w GOPROXY=https://goproxy.cn,direct
 RUN go install github.com/gopherdata/gophernotes@v0.7.5
 
 CMD gophernotes $DOCKERNEL_CONNECTION_FILE
+
