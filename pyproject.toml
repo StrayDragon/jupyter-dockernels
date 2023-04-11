@@ -8,7 +8,7 @@ authors = [
     {name = "L8ng", email = "straydragonl@foxmail.com"},
 ]
 dependencies = [
-    "jupyterlab>=3.6.1",
+    "jupyterlab==3.6.3",
     "jupyterlab-lsp>=4.0.0",
     "black>=23.1.0",
     "python-lsp-server[rope]>=1.7.1",
