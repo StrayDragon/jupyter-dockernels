@@ -2,7 +2,7 @@
 
 [project]
 name = "jupyter-dockernels"
-version = ""
+version = "0.0.0"
 description = ""
 authors = [
     {name = "L8ng", email = "straydragonl@foxmail.com"},
