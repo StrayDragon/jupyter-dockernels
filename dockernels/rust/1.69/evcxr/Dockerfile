@@ -1,4 +1,4 @@
-FROM rust:1.68-slim-buster
+FROM rust:1.69.0-slim-bullseye
 
 COPY config/mirrors/cn/cargo_config /.cargo/config
 COPY config/mirrors/cn/debian_bullseye_config /etc/apt/sources.list
@@ -13,6 +13,6 @@ RUN rm -Rf /var/lib/apt/lists/* && \
   build-essential \
   cmake
 
-RUN rustup component add rust-src
+# RUN rustup component add rust-src
 RUN cargo install evcxr_jupyter
 CMD evcxr_jupyter --control_file $DOCKERNEL_CONNECTION_FILE

@@ -2,43 +2,66 @@
 
 确保已经安装好 dockernel
 
-## 务必执行
+## 首先执行
 ```shell
 cd dockernels
 ```
 
-## Rust
-
+## 构建镜像
 ```shell
-# dockernel uninstall --name rust1.68-DK
-docker build --tag rust-1.68-dockernel -f rust-1.68/Dockerfile .
-dockernel install --image-name rust-1.68-dockernel --name rust1.68-DK --language rust
+docker build --tag <LANG_NAME-LANG_VERSION-DK-KERNEL_NAME> -f <LANG_DOCKERNEL_DOCKERFILE_DIR>/Dockerfile .
+dockernel install --name <LANG_NAME-LANG_VERSION-DK-KERNEL_NAME> --language <LANG_TYPE>
 ```
 
-## Python
+### 示例
+
+#### Rust
+
+##### evcxr
 
 ```shell
-# dockernel uninstall --name py3.11-DK
-docker build --tag python-3.11-dockernel -f python-3.11/Dockerfile .
-dockernel install --image-name python-3.11-dockernel --name py3.11-DK --language python
+docker build --tag rust-1.69-dk-evcxr -f rust/1.69/evcxr/Dockerfile .
+dockernel install --name rust-1.69-dk-evcxr --language rust
 ```
 
-## Golang
-
-### gonb
+##### irust
 
 ```shell
-# dockernel uninstall --name go1.20-DK-gonb
-docker build --tag go-1.20-dockernel-gonb -f go-1.20/gonb/Dockerfile .
-dockernel install --image-name go-1.20-dockernel-gonb --name go1.20-DK-gonb --language go
+docker build --tag rust-1.69-dk-irust -f rust/1.69/irust/Dockerfile .
+dockernel install --name rust-1.69-dk-irust --language rust
 ```
 
-### gophernote (deprecated: not support official generic)
+#### Python
+
+##### ipython
+```shell
+docker build --tag python-3.11-dk-ipython -f python/3.11/ipython/Dockerfile .
+dockernel install --name python-3.11-dk-ipython --language python
+```
+
+#### Golang
+
+##### gonb
 
 ```shell
-# dockernel uninstall --name go1.20-DK-gophernote
-docker build --tag go-1.20-dockernel-gophernote -f go-1.20/gophernote/Dockerfile .
-dockernel install --image-name go-1.20-dockernel-gophernote --name go1.20-DK-gophernote --language go
+docker build --tag go-1.20-dk-gonb -f go/1.20/gonb/Dockerfile .
+dockernel install --name go-1.20-dk-gonb --language go
+```
+
+##### gophernote (deprecated: not support official generic)
+```shell
+docker build --tag go-1.20-dk-gophernote -f go/1.20/gophernote/Dockerfile .
+dockernel install --name go-1.20-dk-gophernote --language go
+```
+
+# 卸载
+```shell
+dockernel uninstall --name <DOCKERNEL_NAME_OR_IMAGE_NAME>
+```
+
+# 查看已安装列表
+```shell
+dockernel install --list
 ```
 
 # 其他 Jupyter Kernels :)
