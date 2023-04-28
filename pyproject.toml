@@ -8,10 +8,10 @@ authors = [
     {name = "L8ng", email = "straydragonl@foxmail.com"},
 ]
 dependencies = [
-    "jupyterlab==3.6.3",
+    "jupyterlab>=3.6.3",
     "jupyterlab-lsp>=4.0.0",
-    "black>=23.1.0",
     "python-lsp-server[rope]>=1.7.1",
+    "black>=23.1.0",
     "dockernel @ git+https://github.com/StrayDragon/dockernel@master",
 ]
 requires-python = ">=3.9"
